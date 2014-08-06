@@ -373,7 +373,7 @@ bool GetMyExternalIP(CNetAddr& ipRet)
 
             pszGet = "GET / HTTP/1.1\r\n"
                      "Host: checkip.dyndns.org\r\n"
-                     "User-Agent: BoomCoin\r\n"
+                     "User-Agent: Plebeian\r\n"
                      "Connection: close\r\n"
                      "\r\n";
 
@@ -392,7 +392,7 @@ bool GetMyExternalIP(CNetAddr& ipRet)
 
             pszGet = "GET /simple/ HTTP/1.1\r\n"
                      "Host: www.showmyip.com\r\n"
-                     "User-Agent: BoomCoin\r\n"
+                     "User-Agent: Plebeian\r\n"
                      "Connection: close\r\n"
                      "\r\n";
 
@@ -409,7 +409,7 @@ bool GetMyExternalIP(CNetAddr& ipRet)
 void ThreadGetMyExternalIP(void* parg)
 {
     // Make this thread recognisable as the external IP detection thread
-    RenameThread("BoomCoin-ext-ip");
+    RenameThread("Plebeian-ext-ip");
 
     CNetAddr addrLocalHost;
     if (GetMyExternalIP(addrLocalHost))
@@ -634,7 +634,7 @@ void CNode::copyStats(CNodeStats &stats)
 void ThreadSocketHandler(void* parg)
 {
     // Make this thread recognisable as the networking thread
-    RenameThread("BoomCoin-net");
+    RenameThread("Plebeian-net");
 
     try
     {
@@ -988,7 +988,7 @@ void ThreadSocketHandler2(void* parg)
 void ThreadMapPort(void* parg)
 {
     // Make this thread recognisable as the UPnP thread
-    RenameThread("BoomCoin-UPnP");
+    RenameThread("Plebeian-UPnP");
 
     try
     {
@@ -1049,7 +1049,7 @@ void ThreadMapPort2(void* parg)
             }
         }
 
-        string strDesc = "BoomCoin " + FormatFullVersion();
+        string strDesc = "Plebeian " + FormatFullVersion();
 #ifndef UPNPDISCOVER_SUCCESS
         /* miniupnpc 1.5 */
         r = UPNP_AddPortMapping(urls.controlURL, data.first.servicetype,
@@ -1139,14 +1139,14 @@ void MapPort()
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
-    {"107.170.88.155", "107.170.88.155"}, //Main BoomCoin Seed Node
+    {"107.170.88.155", "107.170.88.155"}, //Main Plebeian Seed Node
 	{"107.170.178.208", "107.170.178.208"},
 };
 
 void ThreadDNSAddressSeed(void* parg)
 {
     // Make this thread recognisable as the DNS seeding thread
-    RenameThread("BoomCoin-dnsseed");
+    RenameThread("Plebeian-dnsseed");
 
     try
     {
@@ -1248,7 +1248,7 @@ void ThreadDumpAddress2(void* parg)
 void ThreadDumpAddress(void* parg)
 {
     // Make this thread recognisable as the address dumping thread
-    RenameThread("BoomCoin-adrdump");
+    RenameThread("Plebeian-adrdump");
 
     try
     {
@@ -1263,7 +1263,7 @@ void ThreadDumpAddress(void* parg)
 void ThreadOpenConnections(void* parg)
 {
     // Make this thread recognisable as the connection opening thread
-    RenameThread("BoomCoin-opencon");
+    RenameThread("Plebeian-opencon");
 
     try
     {
@@ -1444,7 +1444,7 @@ void ThreadOpenConnections2(void* parg)
 void ThreadOpenAddedConnections(void* parg)
 {
     // Make this thread recognisable as the connection opening thread
-    RenameThread("BoomCoin-opencon");
+    RenameThread("Plebeian-opencon");
 
     try
     {
@@ -1575,7 +1575,7 @@ bool OpenNetworkConnection(const CAddress& addrConnect, CSemaphoreGrant *grantOu
 void ThreadMessageHandler(void* parg)
 {
     // Make this thread recognisable as the message handling thread
-    RenameThread("BoomCoin-msghand");
+    RenameThread("Plebeian-msghand");
 
     try
     {
@@ -1743,7 +1743,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. BoomCoin is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. Plebeian is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         printf("%s\n", strError.c_str());
@@ -1826,7 +1826,7 @@ void static Discover()
 void StartNode(void* parg)
 {
     // Make this thread recognisable as the startup thread
-    RenameThread("BoomCoin-start");
+    RenameThread("Plebeian-start");
 
     if (semOutbound == NULL) {
         // initialize semaphore

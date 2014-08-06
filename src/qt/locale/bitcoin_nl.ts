@@ -801,7 +801,7 @@ Adres: %4
     <message>
         <location line="+13"/>
         <source>Tree mode</source>
-        <translation>Boom modus</translation>
+        <translation>Pleb modus</translation>
     </message>
     <message>
         <location line="+16"/>

@@ -276,7 +276,7 @@ class CBitcoinAddress : public CBase58Data
 public:
     enum
     {
-        PUBKEY_ADDRESS = 24, //BoomCoin Addresses start with an B
+        PUBKEY_ADDRESS = 24, //Plebeian Addresses start with an B
         SCRIPT_ADDRESS = 28,
         PUBKEY_ADDRESS_TEST = 111,
         SCRIPT_ADDRESS_TEST = 196,

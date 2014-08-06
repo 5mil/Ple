@@ -59,7 +59,7 @@ void Serveur::connected()
 
 void Serveur::joins()
 {
-    join("#boomcoin");
+    join("#Plebeian");
 }
 
 void Serveur::readServeur()
