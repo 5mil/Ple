@@ -38,12 +38,12 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // "standard" scrypt target limit
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
-unsigned int nTargetSpacing = 1 * 60; // 60 seconds
+unsigned int nTargetSpacing = 1 * 67; // 67 seconds
 unsigned int nStakeMinAge = 60 * 1440; // 24 hour
 unsigned int nStakeMaxAge = 60 * 10080; //7 days
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 
-int nCoinbaseMaturity = 24; //24 blocks for coins to mature
+int nCoinbaseMaturity = 42; //42 blocks for coins to mature
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -967,7 +967,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     int64_t nSubsidy = 100 * COIN;
 	if(pindexBest->nHeight < 1)
     {
-        nSubsidy = 300000 * COIN;
+        nSubsidy = 462586 * COIN;
     }
 		else if(pindexBest->nHeight < 420)
     {
@@ -975,7 +975,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     }
 		else if(pindexBest->nHeight < 476)
     {
-		nSubsidy = 5400 * COIN;
+		nSubsidy = 4200 * COIN;
     }
 		else if(pindexBest->nHeight < 5400)
 	{
@@ -996,7 +996,7 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 
     nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE;
 
-    int64_t nSubsidy = nCoinAge * nRewardCoinYear / 365 / COIN;
+    int64_t nSubsidy = nCoinAge * nRewardCoinYear / 355 / COIN;
 
 
     if (fDebug && GetBoolArg("-printcreation"))

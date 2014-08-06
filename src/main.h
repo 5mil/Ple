@@ -26,18 +26,18 @@ class CInv;
 class CRequestTracker;
 class CNode;
 
-static const int LAST_POW_BLOCK = 2880; // 4 days Proof-Of-Work
+static const int LAST_POW_BLOCK = 5400; // 4.2 days Proof-Of-Work
 
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
 static const unsigned int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;
 static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
 static const unsigned int MAX_INV_SZ = 50000;
-static const int64_t MIN_TX_FEE = 1000;
+static const int64_t MIN_TX_FEE = 100;
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
-static const int64_t MAX_MONEY = 15000000 * COIN; //15 million coins max PoW
-static const int64_t COIN_YEAR_REWARD = 9 * CENT; // 9% per year
-static const int64_t MAX_MINT_PROOF_OF_STAKE = 0.09 * COIN;	// 9% Annual PoS Interest
+static const int64_t MAX_MONEY = 23129316 * COIN; //23 million coins max PoW
+static const int64_t COIN_YEAR_REWARD = 20 * CENT; // 20% per year
+static const int64_t MAX_MINT_PROOF_OF_STAKE = 0.20 * COIN;	// 20% Annual PoS Interest
 static const int MODIFIER_INTERVAL_SWITCH = 2880;
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
