@@ -11,10 +11,9 @@ Max PoW Coins: ~23,129,316 Pleb
 RPC Port: 28177
 P2P Port: 28175
 
-30 Blocks to mature
+42 Blocks to mature
 
 X13 -(blake, bmw, groestl, jh, keccak, skein, luffa, cubehash, shavite, simd, echo, hamsi, fugue)
-The X13 algorithm is the best new algorithm based off X13.
 
 Block Reward Schedule:
 Block 1 is 462,586 Pleb - premine of 2%
