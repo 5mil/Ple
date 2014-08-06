@@ -2,9 +2,9 @@ Plebeian the X13 PoW and PoS Cryptocurrency.
 
 Algorithm: X13 POW
 
-Ticker: Pleb
+Ticker: PLEB
 
-Max PoW Coins: ~23,129,316 Pleb
+Max PoW Coins: ~23,129,316 PLEB
 
 20% PoS Annual Interest
 
@@ -16,8 +16,8 @@ P2P Port: 28175
 X13 -(blake, bmw, groestl, jh, keccak, skein, luffa, cubehash, shavite, simd, echo, hamsi, fugue)
 
 Block Reward Schedule:
-Block 1 is 462,586 Pleb - premine of 2%
-Block 2-5400 are 4200 Pleb
+Block 1 is 462,586 PLEB - premine of 2%
+Block 2-5400 are 4200 PLEB
 
 PoW Ends on Block 5400 about 4.2 days
 
