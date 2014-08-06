@@ -4,9 +4,9 @@ Algorithm: X13 POW
 
 Ticker: Pleb
 
-Max PoW Coins: ~11,300,000 Pleb
+Max PoW Coins: ~23,129,316 Pleb
 
-9% PoS Annual Interest
+20% PoS Annual Interest
 
 RPC Port: 28177
 P2P Port: 28175
@@ -17,13 +17,12 @@ X13 -(blake, bmw, groestl, jh, keccak, skein, luffa, cubehash, shavite, simd, ec
 The X13 algorithm is the best new algorithm based off X13.
 
 Block Reward Schedule:
-Block 1 is 300000  Pleb
-Block 2-120 are 1 Pleb
-Block 121-2880 are 4000 Pleb
+Block 1 is 462,586 Pleb - premine of 2%
+Block 2-5400 are 4200 Pleb
 
-PoW Ends on Block 2880 about 4 days
+PoW Ends on Block 5400 about 4.2 days
 
-MinStakeAge: 1 hour, MaxStakeAge: Unlimited, 9% Annual Interest
+MinStakeAge: 1 day, MaxStakeAge: 7 days, 20% Annual Interest
 
 Development process
 ===========================
