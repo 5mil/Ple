@@ -1,10 +1,10 @@
-BoomCoin the X13 PoW and PoS Cryptocurrency.
+Plebeian the X13 PoW and PoS Cryptocurrency.
 
 Algorithm: X13 POW
 
-Ticker: BOOM
+Ticker: Pleb
 
-Max PoW Coins: ~11,300,000 BOOM
+Max PoW Coins: ~11,300,000 Pleb
 
 9% PoS Annual Interest
 
@@ -17,9 +17,9 @@ X13 -(blake, bmw, groestl, jh, keccak, skein, luffa, cubehash, shavite, simd, ec
 The X13 algorithm is the best new algorithm based off X13.
 
 Block Reward Schedule:
-Block 1 is 300000  BOOM
-Block 2-120 are 1 BOOM
-Block 121-2880 are 4000 BOOM
+Block 1 is 300000  Pleb
+Block 2-120 are 1 Pleb
+Block 121-2880 are 4000 Pleb
 
 PoW Ends on Block 2880 about 4 days
 
@@ -38,7 +38,7 @@ or are controversial.
 
 The master branch is regularly built and tested, but is not guaranteed
 to be completely stable. Tags are regularly created to indicate new
-stable release versions of BoomCoin.
+stable release versions of Plebeian.
 
 Feature branches are created when there are major new features being
 worked on by several people.
